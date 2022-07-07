@@ -6,8 +6,8 @@ async function scraperAll(browserInstance) {
         browser = await browserInstance;
         await pageScraper.scraper(browser);
     } catch {
-        console.log("Coult not resolve the browser isntance => ", err);
+        console.log("Could not resolve the browser isntance => ", err);
     }
 }
 
-module.exports = (browserInstance) => scraperAll(browserInstance);
+module.exports = (browserInstance) => { scraperAll(browserInstance) };
